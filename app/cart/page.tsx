@@ -2,7 +2,7 @@
 import { useCart } from '../../context/CartContext';
 
 export default function CartPage() {
-  const { cart, removeFromCart } = useCart();
+  const { cart, removeFromCart } = useContext();
 
   return (
     <div>
