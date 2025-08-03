@@ -19,7 +19,7 @@ export default function ProductPage({ params }: Props) {
             {product.price.toLocaleString('fa-IR')} تومان
           </p>
           <p>{product.description}</p>
-<button on click={()=>{addtocart(product)}}>addtocart</button>
+<button onClick={()=>{addtocart(product)}}>addtocart</button>
         </div>
       </div>
     </div>
