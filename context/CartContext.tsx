@@ -16,7 +16,7 @@ type CartContextType = {
 
 const CartContext = createContext<CartContextType | null>(null);
 
-export const CartProvider = ({ children }: { children: React.ReactNode }) => {
+export function CartProvider = ({ children }: { children: React.ReactNode }) => {
   const [cart, setCart] = useState<Product[]>([]);
 
   const addToCart = (product: Product) => {
